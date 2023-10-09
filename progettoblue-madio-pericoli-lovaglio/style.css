@@ -1,0 +1,267 @@
+/* IMPORT FONT */
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&display=swap');
+
+/* VARIABILI COLORI */
+:root {
+
+    --main: #1566C0;
+
+}
+
+.textMain{
+    color: var(--main);
+}
+
+.bgMain{
+    background-color: var(--main);
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Righteous', cursive;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* HEADER */
+.customRow{
+    background: linear-gradient( rgba(0, 0, 0, 1), rgb(0, 0, 0, 0)), url(./media/header.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.customHeaderTitle{
+    font-size: 90px;
+}
+
+.customHeaderParagraph{
+    font-size: 25px;
+}
+
+.customButton{
+    height: 60px;
+    width: 200px;
+    font-weight: bold;
+    font-size: 25px;
+    border: none;
+    background-color: #ffc107;
+}
+
+.bottomWave{
+    background-image: url(./media/wave2.svg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    min-height: 80px;
+}
+
+.topWave{
+    background-image: url(./media/wave1.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 80px;
+}
+
+/* SEZIONE PRE-CARD CON ORIENTAMENTO CENTRALE */
+.customSecondaryTitle {
+    font-size: 60px;
+    padding: 0 30% 0 30%;
+}
+
+.customWidth {
+    width: 70%;
+}
+
+/* SEZIONE CARD */
+/* background e dimensioni */
+.card1Img{
+    background: linear-gradient(rgba(0,0,0,1), rgba(0, 0, 0, 0.5), rgba(0,0,0,1)), url(./media/1.png);
+}
+    
+.card2Img{
+    background: linear-gradient(rgba(0,0,0,1), rgba(0, 0, 0, 0.5), rgba(0,0,0,1)), url(./media/2.png);
+}
+    
+.card3Img{
+    background: linear-gradient(rgba(0,0,0,1), rgba(0, 0, 0, 0.5), rgba(0,0,0,1)), url(./media/3.png);
+}
+.card4Img{
+    background: linear-gradient(rgba(0,0,0,1), rgba(0, 0, 0, 0.5), rgba(0,0,0,1)), url(./media/4.png);
+}
+
+.bgCard{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 48vh;
+    width: 22vw;
+}
+
+/* SEZIONE CON ICONE ALLINEATE */
+.customIcon{
+    width: 5vw;
+    height: 5vw;
+}
+
+/* SEZIONE CARD ROTONDE */
+
+.borderRoundedImg{
+
+    border: 5px solid var(--main);
+
+}
+
+/* TIMELINE  */
+
+.customMarginTimeline {
+    margin-top: 15% !important;
+}
+
+.borderRight {
+    border-right: var(--main) solid 5px;
+}
+
+.borderLeft {
+    border-left: var(--main) solid 5px;
+}
+
+.cerchioLeft, .cerchioRight {
+
+    position: relative;
+
+}
+
+.cerchioRight::after {
+    content: "";
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--main);
+    position: absolute;
+    right: -34px;
+    background-color: white;
+    
+}
+
+.cerchioLeft::after {
+    content: "";
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--main);
+    position: absolute;
+    left: -34px;
+    background-color: white;
+    
+}
+
+.customButtonTimeline {
+    background-color: var(--main);
+    border-radius: 0;
+    color: white;
+    width: 200px;
+    border: 3px solid var(--main);
+    transition: 0.4s;
+}
+
+.customButtonTimeline:hover {
+
+    border: 3px solid var(--main);
+}
+
+/* FOOTER */
+
+.text-yellow{
+
+    color: #ffc107;
+
+}
+
+.sfondofooter{
+
+    min-height: 60vh;
+
+    background: linear-gradient(rgb(255, 255, 255), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(./media/footer.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+/* ALTEZZA E LARGHEZZA CARD NON ALLINEATE */
+
+.h-card{
+
+    height: 75%;
+
+}
+
+
+.w-card{
+
+    width: 25%;
+
+}
+
+@media screen and (max-width: 800px) {
+    .customSecondaryTitle {
+        font-size: 50px;
+        padding: 0;
+    }
+
+    .bgCard{
+        height: 50vh;
+        width: 100vw;
+    }
+
+    .customIcon{
+        width: 22vw;
+        height: 22vw;
+    }
+
+    
+    #ordinecard{
+
+        order: 1;
+
+    }
+
+    .sezione6{
+
+        padding-top: 20px;
+
+        padding-bottom: 20px;
+    
+    }
+
+    
+    #p-footer{
+
+        font-size: x-small;
+
+    }
+
+    /* CLASSI RESPONSIVE PER CARD NON ALLINEATE */
+
+    .cardresp{
+
+        height: auto;
+
+    }
+
+    
+    .w-resp{
+
+        width: 100%;
+
+    }
+
+    
+    #ultimeCardResp{
+
+        margin: 0% !important;
+
+    }
+
+}
